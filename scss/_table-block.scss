@@ -1,0 +1,94 @@
+.table-block{
+	background: #880d2f;
+	.container{
+		max-width: 104rem;
+		padding: 9rem 2rem;
+	}
+	h2{
+		text-transform: uppercase;	
+		font: 3.6rem/4.5rem $font-bold;
+		letter-spacing: 0.036rem;
+		color: #fff;
+		text-align: center;
+		padding-bottom: 7.5rem;
+	}
+	table{
+		border-collapse: collapse;
+		width: 100%;
+		tr{
+			border-radius: 2.6rem;
+			th{
+				text-align: left;
+				background:#fff;
+				font: 2rem $font-bold;
+				text-transform: uppercase;
+				border-bottom: 0.5rem solid #880d2f;
+				padding: 1.3rem 0;
+			}
+			&:nth-child(n+2) td{
+				background: #942544;
+			}
+			&:nth-child(2n+3) td{
+				background: #a03d59;
+			}
+			td, th{
+				&:first-child{
+					border-radius: 2.6rem 0 0 2.6rem;
+					padding-left: 3rem;
+				}
+				&:last-child{
+					border-radius: 0 2.6rem 2.6rem 0;
+					padding-right: 3rem;
+				}
+			}
+			td{
+				font: 1.5rem $font2;
+				color: #fff;
+				border-bottom: 0.1rem solid #880d2f;
+				padding: 1.3rem 0;
+			}
+		}
+	}
+}
+@media screen and(max-width: 900px){
+.table-block table tr{
+	td, th{
+		padding: 1.3rem 1rem;
+		&:first-child{
+			padding-left: 1rem;
+		}
+		&:last-child{
+			padding-right: 1rem;
+		}
+	} 
+
+}
+}
+@media screen and (max-width: 576px){
+.table-block{
+	.container{
+		padding: 5rem 2rem;
+	}
+	h2{
+		font-size: 3rem;
+	}
+}
+}
+@media screen and(max-width: 480px){
+.table-block table tr{
+	td{
+		padding: 1.3rem 0.5rem;
+	} 
+	td{
+		font-size: 1.2rem;
+	}
+	th{
+		font-size: 1.5rem;
+	}
+}	
+}
+@media screen and(max-width: 350px){
+.table-block table tr td{
+	font-size: 1.1rem;
+}
+}

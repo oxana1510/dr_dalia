@@ -1,0 +1,54 @@
+.block-text{
+	background: #f4f4f4;
+	.container{
+		position: relative;
+		top: -14rem;
+		-webkit-box-shadow: 0 0 2.9rem rgba(0, 0, 0, 0.18);
+		        box-shadow: 0 0 2.9rem rgba(0, 0, 0, 0.18);
+		border-radius: 2rem;
+		background: #fff;
+		padding: 24rem 5rem 5rem;
+		max-width: 96rem;
+	}
+	&__img{
+		position: absolute;
+		border-radius:50%;
+		width: 41.3rem;
+		height: 41.3rem;
+		left: 0;
+		right: 0;
+		top: -20rem;
+		margin: auto;
+		border: 2rem solid #fff;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	p{
+		color: #232323;
+		font: 1.8rem/3rem $font2;
+		letter-spacing: 0.036rem;
+		padding-bottom: 4rem;
+	}
+}
+
+@media screen and (max-width: 768px){
+.block-text	.container{
+	padding: 24rem 2.5rem 2.5rem;
+}
+}
+@media screen and (max-width: 576px){
+.block-text{
+	.container{
+		padding-top: 15rem;
+		top: -7rem;
+	}
+	&__img{
+		width: 27.5rem;
+		height: 27.5rem;
+		top: -14rem;
+	}
+}
+}

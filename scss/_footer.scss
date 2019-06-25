@@ -1,0 +1,48 @@
+.footer{
+	background: #880d2f;
+	color: #fff;
+	.container{
+		padding: 9rem 2rem 5rem;
+		text-align: center;
+	}
+	h3{
+		font-size: 3rem;
+		color: #fffdf4;
+		padding-bottom: 1.5rem;
+	}
+	p{
+		font: 15px $font2;
+		a{
+			color: #fff;
+			text-decoration: underline;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
+	.social{
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		padding: 3.5rem 0 3rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		li{
+			padding: 0 1.7rem;
+		}
+		a{
+			display: block;
+			font-size: 2.2rem;
+			color:#880d2f;
+			border-radius: 50%;
+			background: #fff;
+			width: 6.7rem;
+			height: 6.7rem;
+			line-height: 6.7rem;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
+}

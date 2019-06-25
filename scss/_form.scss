@@ -1,0 +1,188 @@
+.form{
+	.container{
+		padding: 9rem 2rem;
+		max-width: 104rem;
+		h2{
+			color: #880d2f;
+			text-transform: uppercase;
+			font: 3.6rem $font-bold;
+			padding-bottom: 8.5rem;
+			text-align: center;
+		}
+	}
+	form{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		input[type=text],
+		input[type=email],
+		input[type=submit],
+		textarea{
+			-webkit-appearance: none;
+    		-moz-appearance: none;
+    		appearance: none;
+		    border-radius: 0;
+		    border: none;
+		    margin: 0;
+			&:focus::-webkit-input-placeholder {
+			  color: transparent;
+			}
+			 
+			&:focus::-moz-placeholder {
+			  color: transparent;
+			}
+			 
+			&:focus:-moz-placeholder {
+			  color: transparent;
+			}
+			&:focus:-ms-input-placeholder {
+			  color: transparent;
+			}
+
+			&::-webkit-input-placeholder {
+			  color: #adadad;
+			  opacity: 1;
+			}
+			 
+			&::-moz-placeholder {
+			  color: #adadad;
+			   opacity: 1;
+			}
+			 
+			&:-moz-placeholder {
+			 color: #adadad;
+			  opacity: 1;
+			}
+			&:-ms-input-placeholder {
+			  color: #adadad;
+			   opacity: 1;
+			}
+		}
+		textarea{
+			overflow: hidden;
+			resize: none;
+			outline:none;
+			height: 10.4rem;
+		}
+		input:not(.button-form),
+		textarea{
+			background: #fff;
+			padding-left: 2rem;
+			font: 1.5rem/5rem $font2;
+			border-radius: 2.6rem;
+			border: 0.1rem solid #d599a9;
+			background: #fff;
+			margin-bottom: 1.8rem;
+		}
+		input:not(.button-form){
+			height: 5.1rem;
+		}
+		input[type=radio]{
+			display: none;
+		}
+
+		label{
+			position: relative; 
+			cursor: pointer;
+			font: 1.5rem/3.1rem $font1;
+			padding: 0 5rem 2.5rem 4rem;  
+			&:before{
+				position: absolute;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				left: 0;
+				content: "";
+				min-width: 3.1rem;
+				width: 3.1rem;
+				height: 3.1rem;
+				margin-right: 10px;
+				border: 0.1rem solid #d599a9;
+				font: 1.5rem $font-bold;
+				background: #fff;
+				border-radius: 50%;
+				margin-bottom: 1.8rem;
+			}
+		}
+		input[type=radio]:checked + label:before{
+			font-family: "fontello";
+		    content: "\f111";
+		    color: #000;
+		    text-align: center;
+		    line-height: 3.1rem;
+		}
+		p{
+			font: 1.5rem $font-bold;
+			padding: 1rem 0 2.5rem 0;
+		}
+		input[type=text]{
+			-webkit-box-flex: 1;
+			    -ms-flex: 1 34%;
+			        flex: 1 34%;
+			&:first-child{
+				margin-right: 2rem;
+			}
+		}
+		input[type=email],
+		textarea,
+		p{
+			-webkit-box-flex: 1;
+			    -ms-flex: 1 100%;
+			        flex: 1 100%;
+		}
+		input[type=submit]{
+			cursor: pointer;
+			border-radius: 3.6rem;
+			background: #880d2f;
+			color: #fff;
+			letter-spacing: 0.735rem;
+			font: 2.1rem $font-bold;
+			max-width: 27rem;
+			width: 100%;
+			margin: 4.7rem auto auto;
+			padding: 1.8rem 0;
+			text-align: center;
+			text-transform: uppercase;
+			border: 0.1rem solid transparent;
+			&:hover{
+				border: 0.1rem solid #880d2f;
+				background: #fff;
+				color: #880d2f;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px){
+.form{
+	.container{
+		padding: 5rem 2rem;
+			h2{
+				font-size: 3rem;
+				padding-bottom: 4rem;
+			}
+	}
+	form{
+		input[type=text]{
+			-webkit-box-flex: 1;
+			    -ms-flex: 1 100%;
+			        flex: 1 100%;
+				&:first-child{
+				margin-right: 0;
+			}
+		}
+		textarea{
+			padding-top: 1rem;
+			line-height: 1.5;
+		}
+	}
+}
+}
